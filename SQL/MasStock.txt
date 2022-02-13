@@ -1,0 +1,6 @@
+SELECT nombre, SUM(stock) stock
+FROM   productos
+GROUP  BY nombre
+ORDER  BY stock DESC LIMIT 1;
+
+//Script para obtener el producto con mas stock

@@ -1,0 +1,7 @@
+SELECT p.nombre, SUM(v.valorVenta) vendido
+FROM   VENTAS v
+INNER JOIN productos p ON p.id = v.id_producto
+GROUP  BY p.nombre
+ORDER  BY VENDIDO DESC LIMIT 1;
+
+//Script para obtener el producto mas vendido
